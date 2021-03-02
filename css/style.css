@@ -1,0 +1,1168 @@
+/* line 1, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+nav {
+  position: fixed;
+  /* * */
+  width: 100%;
+  /* * */
+  height: 50px;
+  background-color: #212121;
+  z-index: 3;
+  /* * */
+}
+
+/* line 17, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+nav .container {
+  position: relative;
+}
+
+/* line 19, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+nav .container .hamburger {
+  display: none;
+}
+
+/* line 21, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 28, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+  font-size: 15px;
+}
+
+/* line 32, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 34, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.menu_link {
+  color: #fff;
+  font-weight: 300;
+}
+
+/* line 37, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+}
+
+/* line 39, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 46, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 51, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+/* line 58, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subheader_call {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 65, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subheader_tel {
+  display: block;
+  margin-top: 8px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 75, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/*1sec */
+/* line 92, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/1sec/uber_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 96, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.promo .row {
+  justify-content: center;
+}
+
+/* line 99, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.promo_header {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 108, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.promo_subheader {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 118, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.promo_descr {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 126, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/*2 sec */
+/* line 144, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.advantages {
+  padding: 20px 0 65px 0;
+}
+
+/* line 146, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.advantages_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 151, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.advantages_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 160, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.advantages_desc {
+  width: 343px;
+}
+
+/* line 162, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.advantages_header {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 167, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.advantages_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 173, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 186, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.title {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 38px;
+}
+
+/* line 196, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #222222;
+  text-align: center;
+  margin-top: 19px;
+}
+
+/*3 sec */
+/* line 207, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url(../img/3sec/mobile_bg.png) center center/cover no-repeat;
+}
+
+/* line 211, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 213, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 220, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url(../img/3sec/sec3_card1.png) center center/cover no-repeat;
+}
+
+/* line 222, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url(../img/3sec/sec3_card2.png) center center/cover no-repeat;
+}
+
+/* line 224, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url(../img/3sec/sec3_card3.png) center center/cover no-repeat;
+}
+
+/* line 226, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url(../img/3sec/sec3_card4.png) center center/cover no-repeat;
+}
+
+/* line 228, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url(../img/3sec/sec3_card5.png) center center/cover no-repeat;
+}
+
+/* line 230, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url(../img/3sec/sec3_card6.png) center center/cover no-repeat;
+}
+
+/* line 232, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 239, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_plus {
+  margin: 0 auto;
+  width: 29px;
+  height: 29px;
+  background: #000000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/* line 254, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 261, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s all;
+}
+
+/* line 272, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #FF5656;
+}
+
+/* 4 sec */
+/* line 276, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.black {
+  color: #fff;
+}
+
+/* line 278, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.opportunities {
+  padding: 57px 0 138px;
+  min-height: 898px;
+  background: url(../img/4sec/car_bg.png) center center/cover no-repeat;
+}
+
+/* line 282, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.opportunities_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 287, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.opportunities .container {
+  position: relative;
+  min-height: 702px;
+}
+
+/* line 290, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.opportunities .label {
+  color: #000;
+  background-color: #fff;
+}
+
+/* line 293, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.opportunities_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* 5 sec */
+/* line 302, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require {
+  padding: 68px 0 89px;
+}
+
+/* line 304, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_block {
+  margin: 31px 0;
+}
+
+/* line 306, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_block_nbm {
+  margin-bottom: 0;
+}
+
+/* line 308, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_title {
+  font-weight: 400;
+  font-size: 22px;
+  color: #1CA8C3;
+  margin-bottom: 22px;
+}
+
+/* line 313, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50;
+}
+
+/* line 316, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+  color: #222222;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+/* line 324, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 2px;
+  height: 21px;
+  width: 20px;
+  background: url(../img/5sec/check_blue.svg) center center/contain no-repeat;
+}
+
+/* line 333, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require_descr {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #1CA8C3;
+}
+
+/* line 339, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #FF5656;
+}
+
+/* line 343, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url(../img/5sec/check_red.svg) center center/contain no-repeat;
+}
+
+/* 6 sec */
+/* line 348, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.world {
+  position: relative;
+  min-height: 720px;
+  padding: 51px 0 22px;
+  background: url(../img/6sec/world_bg.jpg) center center/cover no-repeat;
+}
+
+/* line 353, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.world .label {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 356, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.world_cities {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 49px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #1FBAD6;
+}
+
+/* line 366, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.world_cities:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* footer */
+/* line 372, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+footer {
+  padding: 11px 0 40px;
+}
+
+/* line 375, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 378, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_line {
+  margin: 0 auto;
+  margin-bottom: 33px;
+  width: 299px;
+  height: 4px;
+  background: #1FBAD6;
+}
+
+/* line 384, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_wrapper {
+  padding-left: 21px;
+  padding-right: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 390, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 392, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 395, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_social {
+  display: flex;
+}
+
+/* line 397, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_social_item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #000;
+  height: 35px;
+  width: 35px;
+  margin-right: 6px;
+}
+
+/* line 410, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 412, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_links {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* line 416, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 420, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_links_main a {
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #070716;
+  margin-bottom: 13px;
+}
+
+/* line 427, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_links_sub {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 431, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_links_sub a {
+  font-weight: 300;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 17px;
+}
+
+/* line 437, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  text-align: center;
+}
+
+/* line 445, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_general.sass */
+.xs-vsible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 7, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo {
+    font-size: 50px;
+  }
+  /* line 11, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_item {
+    align-items: flex-start;
+  }
+  /* line 13, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_desc {
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 19, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 21, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 24, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader img {
+    width: 100%;
+  }
+  /* line 26, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 28, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_tel {
+    font-size: 18px;
+  }
+  /* line 30, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_btn {
+    width: 100%;
+    margin-top: 21px;
+    height: 40px;
+  }
+  /* line 35, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 37, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 40, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_item {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 43, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_circle {
+    margin-right: 0;
+  }
+  /* line 45, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_desc {
+    margin-top: 20px;
+    width: 300px;
+  }
+  /* line 49, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 52, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    margin-top: 30px;
+  }
+  /* line 55, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    justify-content: center;
+  }
+  /* line 57, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_social {
+    justify-content: center;
+  }
+  /* line 60, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities_img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 767px) {
+  /* line 64, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 76, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 78, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: 0;
+    margin-top: 10px;
+  }
+  /* line 82, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 85, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 87, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 26px;
+  }
+  /* line 95, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 103, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 105, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 107, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 109, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 111, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 113, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .xs-vsible {
+    display: block;
+  }
+  /* line 116, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_tel {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 10px;
+  }
+  /* line 124, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_btn {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+  }
+  /* line 130, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities {
+    background: url(../img/4sec/dark_bg.png) center center/cover no-repeat;
+    min-height: 430px;
+    padding: 43px 0 45px;
+  }
+  /* line 134, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities .container {
+    min-height: 430px;
+  }
+  /* line 136, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities_img {
+    margin-top: 45px;
+  }
+  /* line 138, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities_descr {
+    margin-top: 23px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 575px) {
+  /* line 145, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 147, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 149, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 151, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* line 155, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .menu_link {
+    display: block;
+  }
+  /* line 159, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader {
+    top: 30px;
+    height: 62px;
+  }
+  /* line 162, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 164, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 166, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_tel {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 11px;
+  }
+  /* line 170, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  /* line 176, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .subheader_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 178, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo {
+    min-height: 360px;
+    padding: 94px 0 35px 0;
+  }
+  /* line 181, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 183, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_header {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 0 24px;
+  }
+  /* line 188, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_subheader {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  /* line 194, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_btn {
+    margin-top: 72px;
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+  }
+  /* line 199, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .promo_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 201, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages {
+    padding: 22px 0 38px;
+  }
+  /* line 203, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_item {
+    margin-top: 26px;
+  }
+  /* line 205, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_circle {
+    height: 100px;
+    width: 100px;
+  }
+  /* line 208, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_desc {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 211, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .advantages_header {
+    font-size: 16px;
+  }
+  /* line 213, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 217, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .mobile {
+    padding: 25px 0 43px;
+  }
+  /* line 219, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .mobile .subtitle {
+    margin-top: 9px;
+    font-size: 14px;
+  }
+  /* line 222, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .mobile .row {
+    margin-top: 27px;
+  }
+  /* line 224, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+    margin-bottom: 30px;
+    padding-top: 80px;
+  }
+  /* line 229, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  /* line 232, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .mobile_item_plus {
+    bottom: 21px;
+  }
+  /* line 234, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities {
+    background: url(../img/4sec/dark_bg.png) center center/cover no-repeat;
+    min-height: 393px;
+    padding-top: 25px;
+    padding-bottom: 31px;
+  }
+  /* line 239, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities .container {
+    min-height: 279px;
+  }
+  /* line 241, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities .container .title,
+  .opportunities .container .subtitle {
+    display: none;
+  }
+  /* line 244, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities_img {
+    margin-top: 34px;
+    left: -15px;
+  }
+  /* line 247, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .opportunities_descr {
+    margin-top: 23px;
+  }
+  /* line 249, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require {
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
+  /* line 252, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require .title {
+    margin-bottom: 31px;
+  }
+  /* line 254, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require_title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  /* line 257, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require_block {
+    margin-top: 0;
+  }
+  /* line 259, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require_list {
+    list-style-type: none;
+    padding-left: 31px;
+    margin-bottom: 15px;
+  }
+  /* line 263, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require_list li {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  /* line 267, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .require_list li:before {
+    top: -3px;
+    left: -31px;
+  }
+  /* line 270, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .world {
+    padding-top: 26px;
+    padding-bottom: 0;
+    min-height: 360px;
+  }
+  /* line 274, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .world .label {
+    font-size: 11px;
+    height: 22px;
+    width: 75px;
+  }
+  /* line 278, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .world .subtitle {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  /* line 282, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .world_cities {
+    width: 100%;
+    font-size: 15px;
+    bottom: 29px;
+  }
+  /* line 287, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 29px;
+  }
+  /* line 290, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_line {
+    width: 255px;
+    margin-bottom: 21px;
+  }
+  /* line 293, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  /* line 296, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_links_main {
+    font-size: 14px;
+  }
+  /* line 298, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_links_main a {
+    margin-bottom: 10px;
+  }
+  /* line 300, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_links_sub {
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 304, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_links_sub a {
+    margin-bottom: 12px;
+  }
+  /* line 306, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-top: 0;
+  }
+  /* line 308, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: 0;
+    margin-bottom: 16px;
+  }
+  /* line 311, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    order: 1;
+    margin-bottom: 19px;
+  }
+  /* line 314, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    order: 2;
+  }
+  /* line 316, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_apps {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  /* line 319, D:/WEB/UDEMY/HTML+CSS/2block/src/sass/_media.sass */
+  .footer_apps img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
